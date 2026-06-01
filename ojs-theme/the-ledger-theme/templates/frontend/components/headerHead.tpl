@@ -217,26 +217,49 @@
             text-decoration: underline !important;
         }
 
-        /* ── Footer: remove grey side columns ── */
-        .pkp_structure_footer .pkp_footer_content {
-            max-width: 1100px !important;
-            margin: 0 auto !important;
-            padding: 0 32px !important;
-            text-align: center !important;
+        /* ── Footer ── */
+        .pkp_structure_footer_wrapper {
+            background: linear-gradient(to bottom, var(--ledger-bg), var(--ledger-light-bg)) !important;
+            border-top: 2px solid var(--ledger-border) !important;
+            margin-top: 4rem !important;
         }
 
-        /* Hide the grey side blocks that flank the footer */
-        .pkp_structure_footer > *:not(.pkp_footer_content) {
-            display: none !important;
+        .pkp_structure_footer {
+            max-width: 1100px !important;
+            margin: 0 auto !important;
+            padding: 2.5rem 32px !important;
+            text-align: center !important;
+            background: none !important;
+        }
+
+        .pkp_footer_content {
+            font-family: var(--font-sans) !important;
+            font-size: 0.875rem !important;
+            color: var(--ledger-text-light) !important;
+        }
+
+        /* Hide the OJS/PKP brand logo in footer */
+        .pkp_brand_footer { display: none !important; }
+
+        /* ── Sidebar: hide grey blocks ── */
+        .pkp_structure_sidebar { display: none !important; }
+
+        /* When sidebar is hidden, expand main content to full width */
+        .pkp_structure_content {
+            display: block !important;
+        }
+
+        .pkp_structure_main {
+            width: 100% !important;
+            max-width: 1100px !important;
+            margin: 0 auto !important;
+            float: none !important;
         }
 
         /* ── Remove blue colour bar at top of page ── */
         .has_site_colour .pkp_structure_head {
             border-top: none !important;
-            box-shadow: none !important;
         }
-
-        /* Some OJS versions render the colour as a top border on body */
         body { border-top: none !important; }
     </style>
 </head>
