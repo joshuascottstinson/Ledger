@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  db:
+    image: mariadb:11.4
+    container_name: ledger_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - ./volumes/db:/var/lib/mysql
+    networks:
+      - ledger_net
+
+  ojs:
+    image: pkpofficial/ojs:${OJS_VERSION}
+    container_name: ledger_ojs
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "${HTTP_PORT}:80"
+    environment:
+      OJS_DB_HOST: db
+      OJS_DB_NAME: ${MYSQL_DATABASE}
+      OJS_DB_USER: ${MYSQL_USER}
+      OJS_DB_PASSWORD: ${MYSQL_PASSWORD}
+      OJS_SITE_NAME: "The Ledger"
+    volumes:
+      - ./volumes/config/ojs.config.inc.php:/var/www/html/config.inc.php:ro
+      - ./volumes/public:/var/www/html/public
+      - ./volumes/private:/var/www/html/private
+      - ./volumes/logs:/var/log/apache2
+    networks:
+      - ledger_net
+
+networks:
+  ledger_net:
+    driver: bridge

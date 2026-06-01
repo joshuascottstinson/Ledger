@@ -1,0 +1,15 @@
+# ── OJS runtime data (never commit) ──────────────────────────────────────────
+volumes/db/
+volumes/private/
+volumes/public/
+volumes/logs/
+
+# ── Local environment overrides ───────────────────────────────────────────────
+# Keep the checked-in .env as a template; put real secrets in .env.local
+.env.local
+
+# ── OS & editor noise ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
