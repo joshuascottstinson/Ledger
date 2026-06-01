@@ -244,6 +244,15 @@
         /* ── Sidebar: hide grey blocks ── */
         .pkp_structure_sidebar { display: none !important; }
 
+        /* Remove the pseudo-element borders on either side of main content */
+        .pkp_structure_main::before,
+        .pkp_structure_main::after {
+            display: none !important;
+            content: none !important;
+            background: none !important;
+            width: 0 !important;
+        }
+
         /* Expand main content to full width — remove sidebar columns */
         .pkp_structure_content {
             display: block !important;
