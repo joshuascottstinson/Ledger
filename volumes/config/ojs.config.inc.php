@@ -4,28 +4,36 @@
 ; Production (live site):  https://theledgereconstatecraft.com
 ;
 ; Do NOT commit secrets — put real passwords in .env.local (git-ignored).
+; app_key, salt, and database password are set on the server only.
 
 [general]
 
+; Generate with: docker exec ledger_ojs php -r "echo 'base64:' . base64_encode(random_bytes(32)) . PHP_EOL;"
+app_key = "CHANGE_ME_APP_KEY"
+
 ; Set this to "On" after the OJS installer has run successfully.
-installed = Off
+installed = On
 
 ; Base URL served to users.
-; This stack runs the prototype at theledgereconstatecraft.org.
-; When you are ready to cut over production, change this to
-; https://theledgereconstatecraft.com and flip force_ssl = On below.
-base_url = "https://theledgereconstatecraft.org"
+; OJS receives plain HTTP from Caddy (which handles TLS termination).
+; When cutting over to production, change to https://theledgereconstatecraft.com
+base_url = "http://theledgereconstatecraft.org"
 
-; Distinct cookie name so prototype sessions never collide with
-; anything running on .com.
+; Distinct cookie name so prototype sessions never collide with .com
 session_cookie_name = OJSSID_ledger_org
+
+date_format_short = "%Y-%m-%d"
+date_format_long = "%B %e, %Y"
+datetime_format_short = "%Y-%m-%d %I:%M %p"
+datetime_format_long = "%B %e, %Y - %I:%M %p"
+time_format = "%I:%M %p"
 
 [database]
 
 driver = mysqli
 host = db
 username = ojs
-password = CHANGE_ME_OJS
+password = "CHANGE_ME_OJS"
 name = ojs
 
 ; Set to On to log every SQL query (development only — Off in prototype/prod)
@@ -37,12 +45,15 @@ debug = Off
 ; Generate with: openssl rand -hex 32
 salt = "CHANGE_ME_SALT_64_CHARS_OR_MORE_HERE"
 
-; Prototype runs behind Caddy which terminates TLS, so set this On.
-force_ssl = On
+; Caddy handles TLS termination — OJS receives plain HTTP internally
+force_ssl = Off
 
 [email]
 
-; SMTP settings — configure before the journal accepts submissions.
+; Required in OJS 3.5 — sets the default mailer driver
+default = sendmail
+
+; SMTP settings — configure when ready to send real email
 smtp = On
 smtp_server = smtp.example.com
 smtp_port = 587
@@ -56,8 +67,11 @@ from_name = "The Ledger"
 
 [files]
 
-; Absolute path inside the container for non-public uploaded files.
-files_dir = /var/www/html/private
+; Private uploads directory (not web-accessible)
+files_dir = /var/www/files
+
+; Public uploads directory
+public_files_dir = /var/www/html/public
 
 [oai]
 
