@@ -48,12 +48,24 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        /* ── Remove default blue top bar ── */
+        .pkp_structure_head::before,
+        .pkp_structure_page::before,
+        #pkp_content_main::before { display: none !important; }
+
         /* ── Header ── */
         .pkp_structure_head {
             background-color: var(--ledger-white) !important;
+            border-top: none !important;
             border-bottom: 2px solid var(--ledger-border) !important;
             box-shadow: 0 1px 3px rgba(0,0,0,0.03) !important;
-            padding: 2rem 0 0 !important;
+            padding: 2.5rem 0 0 !important;
+        }
+
+        /* Centre the journal name */
+        .pkp_site_name {
+            text-align: center !important;
+            margin-bottom: 1.5rem !important;
         }
 
         /* Journal name */
@@ -205,12 +217,26 @@
             text-decoration: underline !important;
         }
 
-        /* ── Override Default Theme blue accent ── */
-        .pkp_structure_head {
-            border-top: none !important;
+        /* ── Footer: remove grey side columns ── */
+        .pkp_structure_footer .pkp_footer_content {
+            max-width: 1100px !important;
+            margin: 0 auto !important;
+            padding: 0 32px !important;
+            text-align: center !important;
         }
 
-        /* Default theme uses a coloured top bar — remove it */
-        .pkp_structure_page::before { display: none !important; }
+        /* Hide the grey side blocks that flank the footer */
+        .pkp_structure_footer > *:not(.pkp_footer_content) {
+            display: none !important;
+        }
+
+        /* ── Remove blue colour bar at top of page ── */
+        .has_site_colour .pkp_structure_head {
+            border-top: none !important;
+            box-shadow: none !important;
+        }
+
+        /* Some OJS versions render the colour as a top border on body */
+        body { border-top: none !important; }
     </style>
 </head>
