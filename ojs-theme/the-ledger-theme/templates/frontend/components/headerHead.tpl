@@ -137,6 +137,17 @@
         a { color: var(--ledger-accent) !important; transition: color 0.3s ease !important; }
         a:hover { color: var(--ledger-primary) !important; text-decoration: none !important; }
 
+        /* ── Plain text should never be tan ── */
+        p, li, td, th, span, div, label, blockquote {
+            color: inherit !important;
+        }
+
+        .pkp_structure_main p,
+        .pkp_structure_main li,
+        .pkp_structure_main span:not(a span) {
+            color: var(--ledger-text) !important;
+        }
+
         /* ── Article/Issue previews ── */
         .obj_article_summary,
         .obj_issue_summary,
