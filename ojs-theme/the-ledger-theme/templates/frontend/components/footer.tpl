@@ -30,7 +30,7 @@
 
             {* Copyright *}
             <p class="ledger_copyright">
-                &copy; {$smarty.now|date_format:"%Y"} The Ledger &mdash; A Journal of Economic Statecraft. All rights reserved.
+                &copy; {$smarty.now|date_format:"Y"} The Ledger &mdash; A Journal of Economic Statecraft. All rights reserved.
             </p>
 
         </div>
