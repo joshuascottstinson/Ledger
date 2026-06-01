@@ -226,7 +226,29 @@
             color: var(--ledger-white) !important;
         }
 
+        /* ── Hide search from nav bar ── */
+        .pkp_site_nav_menu .pkp_search,
+        .pkp_head_wrapper .pkp_search {
+            display: none !important;
+        }
+
         /* ── Footer ── */
+        .pkp_structure_footer_wrapper .pkp_search {
+            display: block !important;
+            text-align: center !important;
+            margin-bottom: 1.5rem !important;
+        }
+
+        .pkp_structure_footer_wrapper .pkp_search input[type="search"] {
+            font-family: var(--font-sans) !important;
+            font-size: 0.875rem !important;
+            border: 1px solid var(--ledger-border) !important;
+            padding: 0.5rem 1rem !important;
+            width: 280px !important;
+            background: var(--ledger-white) !important;
+            color: var(--ledger-text) !important;
+        }
+
         .pkp_structure_footer {
             background: linear-gradient(to bottom, var(--ledger-bg), var(--ledger-light-bg)) !important;
             border-top: 2px solid var(--ledger-border) !important;
