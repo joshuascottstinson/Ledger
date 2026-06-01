@@ -82,8 +82,8 @@
             display: block !important;
             text-indent: -9999px !important;
             overflow: hidden !important;
-            width: 420px !important;
-            height: 200px !important;
+            width: 520px !important;
+            height: 260px !important;
             margin: 0 auto !important;
             background: url('/public/ledger-logo.png') center/contain no-repeat !important;
         }
