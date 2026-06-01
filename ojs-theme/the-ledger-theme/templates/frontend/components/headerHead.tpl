@@ -244,16 +244,33 @@
         /* ── Sidebar: hide grey blocks ── */
         .pkp_structure_sidebar { display: none !important; }
 
-        /* When sidebar is hidden, expand main content to full width */
+        /* Expand main content to full width — remove sidebar columns */
         .pkp_structure_content {
             display: block !important;
+            width: 100% !important;
+            max-width: 1100px !important;
+            margin: 0 auto !important;
+            padding: 0 32px !important;
+            border: none !important;
+            background: none !important;
         }
 
         .pkp_structure_main {
             width: 100% !important;
-            max-width: 1100px !important;
-            margin: 0 auto !important;
+            max-width: 100% !important;
+            margin: 0 !important;
             float: none !important;
+            padding: 3rem 0 !important;
+            border-left: none !important;
+            border-right: none !important;
+            border-top: none !important;
+            border-bottom: none !important;
+            background: none !important;
+        }
+
+        /* Fix body text color — tan only on links */
+        body, p, li, td, .pkp_structure_main {
+            color: var(--ledger-text) !important;
         }
 
         /* ── Remove blue colour bar at top of page ── */
