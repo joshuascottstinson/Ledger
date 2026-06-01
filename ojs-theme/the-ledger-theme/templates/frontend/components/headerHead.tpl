@@ -100,6 +100,14 @@
         .pkp_navigation_primary_row {
             background-color: var(--ledger-white) !important;
             border-top: 1px solid var(--ledger-border) !important;
+            display: flex !important;
+            justify-content: center !important;
+        }
+
+        .pkp_navigation_primary_row .pkp_navigation_primary {
+            display: flex !important;
+            justify-content: center !important;
+            width: 100% !important;
         }
 
         .pkp_navigation_primary > li > a,
