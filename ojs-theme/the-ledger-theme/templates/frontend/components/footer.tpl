@@ -15,7 +15,7 @@
 
             {* Search bar *}
             <div class="ledger_footer_search">
-                <form method="get" action="{url router=\PKP\core\PKPApplication::ROUTE_PAGE page="search" op="search"}">
+                <form method="get" action="{url page="search" op="search"}">
                     <input type="search" name="query" placeholder="Search The Ledger…" aria-label="Search">
                     <button type="submit">Search</button>
                 </form>
