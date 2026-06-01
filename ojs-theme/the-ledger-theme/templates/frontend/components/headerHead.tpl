@@ -233,27 +233,103 @@
         }
 
         /* ── Footer ── */
-        .pkp_structure_footer_wrapper .pkp_search {
-            display: block !important;
-            text-align: center !important;
-            margin-bottom: 1.5rem !important;
-        }
-
-        .pkp_structure_footer_wrapper .pkp_search input[type="search"] {
-            font-family: var(--font-sans) !important;
-            font-size: 0.875rem !important;
-            border: 1px solid var(--ledger-border) !important;
-            padding: 0.5rem 1rem !important;
-            width: 280px !important;
-            background: var(--ledger-white) !important;
-            color: var(--ledger-text) !important;
+        .pkp_structure_footer_wrapper {
+            background: linear-gradient(to bottom, var(--ledger-bg), var(--ledger-light-bg));
+            border-top: 2px solid var(--ledger-border);
+            margin-top: 4rem;
         }
 
         .pkp_structure_footer {
-            background: linear-gradient(to bottom, var(--ledger-bg), var(--ledger-light-bg)) !important;
-            border-top: 2px solid var(--ledger-border) !important;
-            padding: 3rem 0 !important;
-            margin-top: 4rem !important;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 32px;
+            text-align: center;
+            background: none !important;
+            border: none !important;
+        }
+
+        .ledger_footer_inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        /* Search bar */
+        .ledger_footer_search form {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+        }
+
+        .ledger_footer_search input[type="search"] {
+            font-family: var(--font-sans);
+            font-size: 0.875rem;
+            border: 1px solid var(--ledger-border);
+            border-right: none;
+            padding: 0.5rem 1rem;
+            width: 260px;
+            background: var(--ledger-white);
+            color: var(--ledger-text);
+            outline: none;
+        }
+
+        .ledger_footer_search input[type="search"]:focus {
+            border-color: var(--ledger-accent);
+        }
+
+        .ledger_footer_search button {
+            font-family: var(--font-sans);
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background-color: var(--ledger-accent);
+            color: var(--ledger-white);
+            border: none;
+            padding: 0.5rem 1.25rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .ledger_footer_search button:hover {
+            background-color: var(--ledger-primary);
+        }
+
+        /* Social links */
+        .ledger_social_links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .ledger_social_links a {
+            font-family: var(--font-sans) !important;
+            font-size: 0.95rem !important;
+            font-weight: 600 !important;
+            color: var(--ledger-primary) !important;
+            text-decoration: none !important;
+            padding: 0.5rem 1.25rem !important;
+            border: 1.5px solid var(--ledger-primary) !important;
+            border-radius: 4px !important;
+            transition: all 0.3s ease !important;
+            letter-spacing: 0.5px !important;
+        }
+
+        .ledger_social_links a:hover {
+            background-color: var(--ledger-primary) !important;
+            color: var(--ledger-white) !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+        }
+
+        /* Copyright */
+        .ledger_copyright {
+            font-family: var(--font-sans) !important;
+            font-size: 0.875rem !important;
+            color: var(--ledger-text-light) !important;
+            margin: 0 !important;
         }
 
         .pkp_structure_footer,
