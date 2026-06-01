@@ -1,28 +1,43 @@
 version: "3.9"
 
+# The Ledger — OJS prototype stack
+#
+# Prototype domain : https://theledgereconstatecraft.org
+# Production (live): https://theledgereconstatecraft.com  ← not touched by this stack
+#
+# Services
+#   caddy  — reverse proxy; handles TLS automatically via Let's Encrypt
+#   ojs    — Open Journal Systems application
+#   db     — MariaDB 11.4 database
+
 services:
-  db:
-    image: mariadb:11.4
-    container_name: ledger_db
+
+  # ── Caddy reverse proxy ────────────────────────────────────────────────────
+  caddy:
+    image: caddy:2-alpine
+    container_name: ledger_caddy
     restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "80:80"
+      - "443:443"
     volumes:
-      - ./volumes/db:/var/lib/mysql
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./volumes/caddy_data:/data
+      - ./volumes/caddy_config:/config
+    depends_on:
+      - ojs
     networks:
       - ledger_net
 
+  # ── OJS application ────────────────────────────────────────────────────────
   ojs:
     image: pkpofficial/ojs:${OJS_VERSION}
     container_name: ledger_ojs
     restart: unless-stopped
+    expose:
+      - "${HTTP_PORT}"
     depends_on:
       - db
-    ports:
-      - "${HTTP_PORT}:80"
     environment:
       OJS_DB_HOST: db
       OJS_DB_NAME: ${MYSQL_DATABASE}
@@ -34,6 +49,21 @@ services:
       - ./volumes/public:/var/www/html/public
       - ./volumes/private:/var/www/html/private
       - ./volumes/logs:/var/log/apache2
+    networks:
+      - ledger_net
+
+  # ── MariaDB database ───────────────────────────────────────────────────────
+  db:
+    image: mariadb:11.4
+    container_name: ledger_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - ./volumes/db:/var/lib/mysql
     networks:
       - ledger_net
 

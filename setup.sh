@@ -12,6 +12,8 @@ DIRS=(
   volumes/public
   volumes/private
   volumes/logs
+  volumes/caddy_data
+  volumes/caddy_config
 )
 
 for dir in "${DIRS[@]}"; do
@@ -29,6 +31,7 @@ done
 if [ "$(uname -s)" = "Linux" ]; then
   echo "==> Fixing ownership → www-data (uid 33) on Linux host"
   sudo chown -R 33:33 volumes/public volumes/private volumes/logs
+  # Caddy runs as root inside the container; caddy_data/caddy_config stay root-owned.
 fi
 
 # ── 3. Remind operator to set real secrets ────────────────────────────────────
@@ -39,6 +42,9 @@ echo ""
 echo "==> Then start the stack with:"
 echo "    docker compose up -d"
 echo ""
-echo "==> OJS setup wizard will be available at: http://localhost:\${HTTP_PORT:-8080}"
+echo "==> OJS prototype will be available at:  https://theledgereconstatecraft.org"
+echo "    Caddy obtains the TLS cert automatically on the first request."
+echo "    Make sure ports 80 and 443 are open and the .org DNS A record"
+echo "    points at this server before starting the stack."
 echo ""
 echo "Done."

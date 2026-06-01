@@ -1,0 +1,38 @@
+# Caddyfile — The Ledger prototype reverse proxy
+#
+# Caddy automatically obtains and renews a TLS certificate from Let's Encrypt
+# for theledgereconstatecraft.org. Requires:
+#   • Port 80 and 443 open in your firewall/security group
+#   • DNS A record for theledgereconstatecraft.org pointing at this server's IP
+
+theledgereconstatecraft.org {
+    # Forward all traffic to the OJS container.
+    # OJS listens on HTTP internally; Caddy handles TLS termination.
+    reverse_proxy ojs:80
+
+    # Pass the real client IP through to OJS logs and access checks.
+    header_up X-Forwarded-Proto https
+    header_up X-Real-IP {remote_host}
+
+    # Basic security headers
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "SAMEORIGIN"
+        Referrer-Policy "strict-origin-when-cross-origin"
+    }
+
+    # Logging
+    log {
+        output file /data/logs/access.log {
+            roll_size 10mb
+            roll_keep 5
+        }
+    }
+}
+
+# Redirect bare HTTP to HTTPS (Caddy handles this automatically, but
+# explicit is clearer for maintainers).
+http://theledgereconstatecraft.org {
+    redir https://theledgereconstatecraft.org{uri} permanent
+}

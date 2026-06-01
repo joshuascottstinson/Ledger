@@ -4,6 +4,10 @@ volumes/private/
 volumes/public/
 volumes/logs/
 
+# ── Caddy TLS certificates and cache (managed automatically, not versioned) ──
+volumes/caddy_data/
+volumes/caddy_config/
+
 # ── Local environment overrides ───────────────────────────────────────────────
 # Keep the checked-in .env as a template; put real secrets in .env.local
 .env.local
