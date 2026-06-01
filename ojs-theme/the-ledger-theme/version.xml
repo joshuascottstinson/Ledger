@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
 <version>
-    <application>theLedgerTheme</application>
+    <application>theLedger</application>
     <type>plugins.themes</type>
     <release>1.0.0.0</release>
     <date>2026-06-01</date>
