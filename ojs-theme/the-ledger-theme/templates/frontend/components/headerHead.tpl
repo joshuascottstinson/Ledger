@@ -66,6 +66,7 @@
         .pkp_site_name {
             text-align: center !important;
             margin-bottom: 1.5rem !important;
+            margin-top: -1rem !important;
         }
 
         /* Journal name — hidden when logo is shown via CSS */
