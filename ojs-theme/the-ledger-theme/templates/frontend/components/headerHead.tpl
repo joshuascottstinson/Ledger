@@ -68,7 +68,7 @@
             margin-bottom: 1.5rem !important;
         }
 
-        /* Journal name */
+        /* Journal name — hidden when logo is shown via CSS */
         .pkp_site_name a,
         .pkp_structure_head .pkp_site_name a {
             font-family: var(--font-display) !important;
@@ -77,12 +77,20 @@
             color: var(--ledger-primary) !important;
             letter-spacing: -0.5px !important;
             text-decoration: none !important;
-        }
-        .pkp_site_name a:hover { color: var(--ledger-accent) !important; }
 
-        /* Logo image */
+            /* Show logo image instead of text */
+            display: block !important;
+            text-indent: -9999px !important;
+            overflow: hidden !important;
+            width: 420px !important;
+            height: 200px !important;
+            margin: 0 auto !important;
+            background: url('/public/ledger-logo.png') center/contain no-repeat !important;
+        }
+
+        /* Logo image if OJS renders an <img> tag */
         .pkp_site_name img {
-            max-width: 480px !important;
+            max-width: 420px !important;
             width: 100% !important;
             height: auto !important;
         }
