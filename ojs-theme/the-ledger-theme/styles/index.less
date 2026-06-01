@@ -1,0 +1,614 @@
+/**
+ * The Ledger — OJS Theme
+ * Matches theledgereconstatecraft.com
+ *
+ * Fonts:   Libre Baskerville (display), Crimson Text (body), Inter (UI/nav)
+ * Accent:  #8b7355 (warm tan)
+ * Background: #fcfcfa (off-white)
+ */
+
+// ── Variables ────────────────────────────────────────────────────────────────
+
+@primary-color:    #1a1a1a;
+@secondary-color:  #2d2d2d;
+@accent-color:     #8b7355;
+@accent-light:     #b8956a;
+@text-color:       #2d2d2d;
+@text-light:       #5a5a5a;
+@light-bg:         #fafaf8;
+@white:            #ffffff;
+@off-white:        #fcfcfa;
+@border-color:     #e5e5e0;
+@border-dark:      #d0d0c8;
+
+@font-serif:       'Crimson Text', 'Georgia', serif;
+@font-display:     'Libre Baskerville', 'Georgia', serif;
+@font-sans:        'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+// ── Reset / Base ─────────────────────────────────────────────────────────────
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: @font-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: @text-color;
+    background-color: @off-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: @accent-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover { color: @primary-color; }
+}
+
+// ── Layout ───────────────────────────────────────────────────────────────────
+
+#container, .pkp_structure_main, .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+// ── Header ───────────────────────────────────────────────────────────────────
+
+.pkp_structure_head {
+    background-color: @white;
+    color: @primary-color;
+    padding: 3rem 0 0;
+    border-bottom: 2px solid @border-color;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+
+    // Site/journal name as display heading
+    .pkp_site_name {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        a {
+            font-family: @font-display;
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: @primary-color;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+            display: inline-block;
+            transition: color 0.3s ease;
+            &:hover { color: @accent-color; }
+        }
+
+        // If a logo image is uploaded it sits here
+        img {
+            max-width: 480px;
+            width: 100%;
+            height: auto;
+            filter: contrast(1.05);
+        }
+    }
+
+    // Tagline / description
+    .pkp_site_name_tagline, .tagline {
+        font-family: @font-serif;
+        font-size: 1.1rem;
+        font-style: italic;
+        color: @text-light;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+}
+
+// ── Navigation ───────────────────────────────────────────────────────────────
+
+.pkp_navigation_primary_row,
+.pkp_nav_primary {
+    text-align: center;
+    background-color: @white;
+    border-top: 1px solid @border-color;
+}
+
+.pkp_navigation_primary,
+.pkp_nav_primary ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+
+    li {
+        position: relative;
+
+        a {
+            font-family: @font-sans;
+            color: @primary-color;
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            padding: 1.25rem 2rem;
+            display: block;
+            transition: all 0.3s ease;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                background-color: @accent-color;
+                transition: width 0.3s ease;
+            }
+
+            &:hover {
+                color: @accent-color;
+                background-color: @light-bg;
+                &::after { width: 60%; }
+            }
+        }
+    }
+}
+
+// ── Main Content ─────────────────────────────────────────────────────────────
+
+.pkp_structure_main {
+    padding: 4rem 0;
+    min-height: calc(100vh - 450px);
+}
+
+// ── Homepage / Journal Index ──────────────────────────────────────────────────
+
+.pkp_page_index {
+
+    // Journal title hero block
+    .pkp_hero_image,
+    .homepageImage {
+        text-align: center;
+        padding: 3rem 0 4rem;
+        border-bottom: 3px double @border-dark;
+        margin-bottom: 4rem;
+        background: linear-gradient(to bottom, @white, @off-white);
+
+        h1, h2 {
+            font-family: @font-display;
+            font-size: 3rem;
+            color: @primary-color;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 1rem;
+        }
+
+        p, .description {
+            font-family: @font-serif;
+            font-size: 1.25rem;
+            color: @text-light;
+            font-style: italic;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+    }
+}
+
+// ── Article / Issue Previews ──────────────────────────────────────────────────
+
+.pkp_article_preview,
+.obj_article_summary,
+.cmp_article_summary {
+    padding: 2.5rem;
+    border: 1px solid @border-color;
+    background-color: @white;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 0;
+        background: linear-gradient(to bottom, @accent-color, @accent-light);
+        transition: height 0.3s ease;
+    }
+
+    &:hover {
+        border-color: @border-dark;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transform: translateY(-2px);
+        &::before { height: 100%; }
+    }
+
+    h2, h3, .title {
+        font-family: @font-display;
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.4;
+        font-weight: 700;
+
+        a {
+            color: @primary-color;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            &:hover { color: @accent-color; }
+        }
+    }
+
+    .meta, .pkp_helpers_author_and_date {
+        font-family: @font-sans;
+        color: @text-light;
+        font-size: 0.875rem;
+        margin-bottom: 1.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+    }
+
+    .excerpt, .teaser {
+        font-family: @font-serif;
+        font-size: 1.05rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.7;
+        color: @text-color;
+    }
+
+    .read-more, .pkp_button {
+        font-family: @font-sans;
+        color: @accent-color;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        display: inline-block;
+        position: relative;
+        padding-right: 24px;
+
+        &::after {
+            content: '→';
+            position: absolute;
+            right: 0;
+            transition: right 0.3s ease;
+        }
+
+        &:hover {
+            color: @primary-color;
+            &::after { right: -4px; }
+        }
+    }
+}
+
+// ── Article Full View ─────────────────────────────────────────────────────────
+
+.pkp_page_article,
+.obj_article_details {
+    max-width: 720px;
+    margin: 0 auto;
+
+    .page_title,
+    h1.title {
+        font-family: @font-display;
+        font-size: 2.75rem;
+        color: @primary-color;
+        margin-bottom: 1.5rem;
+        line-height: 1.25;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        text-align: center;
+        padding-bottom: 2.5rem;
+        border-bottom: 3px double @border-dark;
+    }
+
+    .authors {
+        font-family: @font-sans;
+        font-size: 1rem;
+        color: @text-light;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
+
+    .abstract,
+    .pkp_article_details_abstract {
+        font-family: @font-serif;
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: @text-color;
+        margin-top: 3rem;
+
+        h2 {
+            font-family: @font-display;
+            font-size: 1.35rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: @text-light;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+    }
+}
+
+// ── Headings (general) ────────────────────────────────────────────────────────
+
+h1, h2, h3, h4 {
+    font-family: @font-display;
+    color: @primary-color;
+    font-weight: 700;
+}
+
+h1 { font-size: 2.75rem; letter-spacing: -0.5px; }
+h2 { font-size: 2rem;    letter-spacing: -0.5px; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+// ── Buttons ───────────────────────────────────────────────────────────────────
+
+.pkp_button,
+.btn,
+button[type="submit"],
+input[type="submit"] {
+    font-family: @font-sans;
+    background-color: @accent-color;
+    color: @white;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        background-color: @primary-color;
+        color: @white;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+}
+
+// ── Forms ─────────────────────────────────────────────────────────────────────
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    font-family: @font-sans;
+    font-size: 0.95rem;
+    color: @text-color;
+    border: 1px solid @border-color;
+    background-color: @white;
+    padding: 0.65rem 0.85rem;
+    width: 100%;
+    transition: border-color 0.3s ease;
+    border-radius: 0;
+
+    &:focus {
+        outline: none;
+        border-color: @accent-color;
+        box-shadow: 0 0 0 2px rgba(139,115,85,0.1);
+    }
+}
+
+label {
+    font-family: @font-sans;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: @primary-color;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+// ── Tables ────────────────────────────────────────────────────────────────────
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.95rem;
+    border: 1px solid @border-color;
+    background-color: @white;
+    margin: 2rem 0;
+
+    thead {
+        background: linear-gradient(to bottom, @light-bg, @white);
+    }
+
+    th {
+        font-family: @font-sans;
+        padding: 1.25rem 1rem;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.875rem;
+        border-bottom: 2px solid @border-dark;
+        color: @primary-color;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    td {
+        font-family: @font-serif;
+        padding: 1.25rem 1rem;
+        border-bottom: 1px solid @border-color;
+        vertical-align: top;
+        line-height: 1.6;
+    }
+
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background-color: @light-bg; }
+}
+
+// ── Footer ────────────────────────────────────────────────────────────────────
+
+.pkp_structure_footer,
+footer {
+    background: linear-gradient(to bottom, @off-white, @light-bg);
+    color: @text-color;
+    padding: 3rem 0;
+    margin-top: 5rem;
+    text-align: center;
+    border-top: 2px solid @border-color;
+
+    p, .pkp_footer_content {
+        font-family: @font-sans;
+        font-size: 0.875rem;
+        color: @text-light;
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        color: @accent-color;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        &:hover {
+            color: @primary-color;
+            text-decoration: underline;
+        }
+    }
+
+    // Social links row
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+
+        a {
+            font-family: @font-sans;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: @primary-color;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1.5px solid @primary-color;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+
+            &:hover {
+                background-color: @primary-color;
+                color: @white;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
+
+// ── Breadcrumb ────────────────────────────────────────────────────────────────
+
+.pkp_breadcrumbs,
+.breadcrumb {
+    font-family: @font-sans;
+    font-size: 0.9rem;
+    color: @text-light;
+    margin-bottom: 2rem;
+
+    a {
+        color: @accent-color;
+        font-weight: 500;
+        &:hover { color: @primary-color; text-decoration: underline; }
+    }
+
+    .separator { margin: 0 0.5rem; color: @border-dark; }
+}
+
+// ── Sidebar ───────────────────────────────────────────────────────────────────
+
+.pkp_sidebar {
+    font-family: @font-sans;
+
+    .pkp_block {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        border: 1px solid @border-color;
+        background-color: @white;
+
+        .title {
+            font-family: @font-display;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: @primary-color;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid @border-color;
+        }
+    }
+}
+
+// ── Notifications / Alerts ────────────────────────────────────────────────────
+
+.pkp_notification,
+.pkp_controllers_notification {
+    font-family: @font-sans;
+    font-size: 0.95rem;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid @accent-color;
+    background-color: rgba(139,115,85,0.06);
+    margin-bottom: 1.5rem;
+    color: @text-color;
+}
+
+// ── Responsive ────────────────────────────────────────────────────────────────
+
+@media (max-width: 768px) {
+    body { font-size: 17px; }
+
+    #container, .pkp_structure_main, .page {
+        padding: 0 20px;
+    }
+
+    .pkp_structure_head {
+        padding: 2rem 0 0;
+
+        .pkp_site_name a { font-size: 2rem; }
+    }
+
+    .pkp_navigation_primary,
+    .pkp_nav_primary ul {
+        flex-wrap: wrap;
+
+        li a {
+            font-size: 0.8rem;
+            padding: 1rem 1.25rem;
+            letter-spacing: 0.8px;
+        }
+    }
+
+    .pkp_structure_main { padding-top: 2.5rem; }
+
+    .pkp_article_preview,
+    .obj_article_summary {
+        padding: 1.75rem;
+        h2, h3 { font-size: 1.5rem; }
+    }
+
+    .pkp_page_article .page_title,
+    .pkp_page_article h1.title {
+        font-size: 2.25rem;
+    }
+
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.75rem; }
+}
