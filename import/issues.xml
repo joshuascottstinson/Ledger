@@ -30,14 +30,13 @@
 				<publication section_ref="DISPATCH" seq="1" status="3" date_published="2025-01-01">
 					<id type="internal" advice="ignore">1</id>
 					<title locale="en">Outcompeting China through Integrated Economic Statecraft—Start in Africa</title>
-					<abstract locale="en">The article argues the United States requires a coordinated Integrated Economic Statecraft Strategy to counter China's influence and compete effectively in developing markets, particularly Africa. Snow contends China's approach bundles commercial, diplomatic, and security objectives into coherent campaigns, while U.S. efforts remain fragmented across agencies. He proposes four coordination pillars: diplomatic coordination through NSC-led task forces, controlling information terrain, integrating security with development, and strategically leveraging financial tools.</abstract>
+					<abstract locale="en">The article argues the United States requires a coordinated Integrated Economic Statecraft Strategy to counter China's influence and compete effectively in developing markets, particularly Africa. Snow contends China's approach bundles commercial, diplomatic, and security objectives into coherent campaigns, while U.S. efforts remain fragmented across agencies.</abstract>
 					<authors>
 						<author seq="0" id="1" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">Marcus</givenname>
 							<familyname locale="en">Snow</familyname>
-							<affiliation>
-								<name locale="en">US Army Reserves (Retired)</name>
-							</affiliation>
+							<affiliation><name locale="en">US Army Reserves (Retired)</name></affiliation>
+							<email>author1@theledgereconstatecraft.org</email>
 							<biography locale="en">Marcus Snow has worked extensively in defense economics, stabilization, and investment management. He is a former co-owner of a small investment management firm and retired Colonel from the US Army Reserves.</biography>
 						</author>
 					</authors>
@@ -50,14 +49,13 @@
 				<publication section_ref="INSIGHT" seq="2" status="3" date_published="2025-01-01">
 					<id type="internal" advice="ignore">2</id>
 					<title locale="en">RUBBER DUCKY for fun, profit, and strengthening the US defense industrial base capacity</title>
-					<abstract locale="en">The article proposes RUBBER DUCKY (Resilient Underpinning for Base Building, Economic Reinvestment, and Discreet Utility Capacity Keeping Yields), a framework for expanding U.S. Defense Industrial Base capacity through incentivized private investment in non-defense companies with transferable production capabilities. The concept draws parallels to historical wartime industrial conversion efforts.</abstract>
+					<abstract locale="en">The article proposes RUBBER DUCKY (Resilient Underpinning for Base Building, Economic Reinvestment, and Discreet Utility Capacity Keeping Yields), a framework for expanding U.S. Defense Industrial Base capacity through incentivized private investment in non-defense companies with transferable production capabilities.</abstract>
 					<authors>
 						<author seq="0" id="2" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">Michael</givenname>
 							<familyname locale="en">McAnally</familyname>
-							<affiliation>
-								<name locale="en">Two Six Technologies</name>
-							</affiliation>
+							<affiliation><name locale="en">Two Six Technologies</name></affiliation>
+							<email>author2@theledgereconstatecraft.org</email>
 							<biography locale="en">Senior Manager of R&amp;D at Two Six Technologies, specializing in national security and critical emerging technologies. His work supports U.S. Government defense programs and R&amp;D prototypes focused on strategic resiliency, cybersecurity, and AI/ML.</biography>
 						</author>
 					</authors>
@@ -70,14 +68,13 @@
 				<publication section_ref="INSIGHT" seq="3" status="3" date_published="2025-01-01">
 					<id type="internal" advice="ignore">3</id>
 					<title locale="en">When Corporate Balance Sheets Lie: The China Risk</title>
-					<abstract locale="en">The article examines a significant disclosure gap in corporate financial statements: American publicly traded companies hold substantial assets and generate substantial revenue streams in China that appear indistinguishable from domestic holdings, despite being subject to China's capital control restrictions. The piece calls for enhanced regulatory disclosure requirements to address vulnerability to potential asset inaccessibility during geopolitical crises.</abstract>
+					<abstract locale="en">The article examines a significant disclosure gap in corporate financial statements: American publicly traded companies hold substantial assets and generate revenue streams in China that appear indistinguishable from domestic holdings, despite being subject to China's capital control restrictions. The piece calls for enhanced regulatory disclosure requirements.</abstract>
 					<authors>
 						<author seq="0" id="3" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">Will</givenname>
 							<familyname locale="en">Kirkman</familyname>
-							<affiliation>
-								<name locale="en">Two Six Technologies</name>
-							</affiliation>
+							<affiliation><name locale="en">Two Six Technologies</name></affiliation>
+							<email>author3@theledgereconstatecraft.org</email>
 							<biography locale="en">Will Kirkman is the Director of Decision Advantage at Two Six Technologies, specializing in strategic competition and national security policy.</biography>
 						</author>
 					</authors>
@@ -90,57 +87,50 @@
 				<publication section_ref="INSIGHT" seq="4" status="3" date_published="2025-01-01">
 					<id type="internal" advice="ignore">4</id>
 					<title locale="en">The Counter-BRI Framework: Rethinking Economic Statecraft and Investment Competition</title>
-					<abstract locale="en">The article argues that following China's 2013 Belt and Road Initiative launch, the United States has lacked an adequate competitive response. The authors propose a framework enabling the Trump Administration to maintain America First domestic priorities while deploying strategic economic engagement abroad, including a counter-BRI strategy and tactical reforms to U.S. government international development policy processes.</abstract>
+					<abstract locale="en">The article argues that following China's 2013 Belt and Road Initiative launch, the United States has lacked an adequate competitive response. The authors propose a framework enabling strategic economic engagement abroad, including a counter-BRI strategy and tactical reforms to U.S. government international development policy processes.</abstract>
 					<authors>
 						<author seq="0" id="4" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">Melisa</givenname>
 							<familyname locale="en">Altintas</familyname>
-							<affiliation>
-								<name locale="en">Georgetown University School of Foreign Service</name>
-							</affiliation>
+							<affiliation><name locale="en">Georgetown University School of Foreign Service</name></affiliation>
+							<email>author4@theledgereconstatecraft.org</email>
 							<biography locale="en">Undergraduate student at Georgetown University's School of Foreign Service and economic statecraft researcher for The Concord Group.</biography>
 						</author>
 						<author seq="1" id="5" user_group_ref="Author" include_in_browse="true">
 							<givenname locale="en">Ashton</givenname>
 							<familyname locale="en">Basak</familyname>
-							<affiliation>
-								<name locale="en">Georgetown University School of Foreign Service</name>
-							</affiliation>
+							<affiliation><name locale="en">Georgetown University School of Foreign Service</name></affiliation>
+							<email>author5@theledgereconstatecraft.org</email>
 						</author>
 						<author seq="2" id="6" user_group_ref="Author" include_in_browse="true">
 							<givenname locale="en">Zubin</givenname>
 							<familyname locale="en">Battaglia</familyname>
-							<affiliation>
-								<name locale="en">Georgetown University School of Foreign Service</name>
-							</affiliation>
+							<affiliation><name locale="en">Georgetown University School of Foreign Service</name></affiliation>
+							<email>author6@theledgereconstatecraft.org</email>
 						</author>
 						<author seq="3" id="7" user_group_ref="Author" include_in_browse="true">
 							<givenname locale="en">Maya</givenname>
 							<familyname locale="en">Belorusskiy</familyname>
-							<affiliation>
-								<name locale="en">Georgetown University School of Foreign Service</name>
-							</affiliation>
+							<affiliation><name locale="en">Georgetown University School of Foreign Service</name></affiliation>
+							<email>author7@theledgereconstatecraft.org</email>
 						</author>
 						<author seq="4" id="8" user_group_ref="Author" include_in_browse="true">
 							<givenname locale="en">Kristina</givenname>
 							<familyname locale="en">Georgieva</familyname>
-							<affiliation>
-								<name locale="en">Georgetown University School of Foreign Service</name>
-							</affiliation>
+							<affiliation><name locale="en">Georgetown University School of Foreign Service</name></affiliation>
+							<email>author8@theledgereconstatecraft.org</email>
 						</author>
 						<author seq="5" id="9" user_group_ref="Author" include_in_browse="true">
 							<givenname locale="en">Rohan</givenname>
 							<familyname locale="en">Jois</familyname>
-							<affiliation>
-								<name locale="en">Georgetown University School of Foreign Service</name>
-							</affiliation>
+							<affiliation><name locale="en">Georgetown University School of Foreign Service</name></affiliation>
+							<email>author9@theledgereconstatecraft.org</email>
 						</author>
 						<author seq="6" id="10" user_group_ref="Author" include_in_browse="true">
 							<givenname locale="en">Luke</givenname>
 							<familyname locale="en">Madden</familyname>
-							<affiliation>
-								<name locale="en">Georgetown University School of Foreign Service</name>
-							</affiliation>
+							<affiliation><name locale="en">Georgetown University School of Foreign Service</name></affiliation>
+							<email>author10@theledgereconstatecraft.org</email>
 						</author>
 					</authors>
 					<pages>31-45</pages>
@@ -152,14 +142,13 @@
 				<publication section_ref="INSIGHT" seq="5" status="3" date_published="2025-01-01">
 					<id type="internal" advice="ignore">5</id>
 					<title locale="en">Anchoring the Arctic: Economic Statecraft for the Northwest Passage</title>
-					<abstract locale="en">The piece argues that Arctic sea ice recession will enable commercial shipping through the Northwest Passage by the late 2030s, creating strategic and economic opportunities. The author contends that the United States and Canada are off to an uninspiring start in developing Arctic infrastructure compared to Russia and China, and outlines four policy pillars for action.</abstract>
+					<abstract locale="en">The piece argues that Arctic sea ice recession will enable commercial shipping through the Northwest Passage by the late 2030s, creating strategic and economic opportunities. The author contends that the United States and Canada are off to an uninspiring start in developing Arctic infrastructure compared to Russia and China.</abstract>
 					<authors>
 						<author seq="0" id="11" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">Ben</givenname>
 							<familyname locale="en">Kallas</familyname>
-							<affiliation>
-								<name locale="en">Searchlight / Lorica</name>
-							</affiliation>
+							<affiliation><name locale="en">Searchlight / Lorica</name></affiliation>
+							<email>author11@theledgereconstatecraft.org</email>
 							<biography locale="en">Former Marine Corps intelligence and reconnaissance officer. Founded Searchlight in 2024 to facilitate capital deployment toward strategic overseas projects. Co-founder of Lorica, a startup building platforms for credentialed labor contracting and compliance supporting U.S. reindustrialization.</biography>
 						</author>
 					</authors>
@@ -172,14 +161,13 @@
 				<publication section_ref="DISPATCH" seq="6" status="3" date_published="2025-01-01">
 					<id type="internal" advice="ignore">6</id>
 					<title locale="en">Degrees of Power: How Education Became the Frontline of Global Influence</title>
-					<abstract locale="en">The piece argues that education has evolved into a critical instrument of geopolitical influence and soft power. Dr. Buying contrasts American educational soft-power strategies with China's aggressive expansion of educational initiatives in Africa. The author contends that viewing education strictly as development assistance limits its strategic potential compared to treating it as doctrine-embedded statecraft.</abstract>
+					<abstract locale="en">The piece argues that education has evolved into a critical instrument of geopolitical influence and soft power. Dr. Buying contrasts American educational soft-power strategies with China's aggressive expansion of educational initiatives in Africa, arguing education should be treated as doctrine-embedded statecraft.</abstract>
 					<authors>
 						<author seq="0" id="12" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">Craig</givenname>
 							<familyname locale="en">Buying</familyname>
-							<affiliation>
-								<name locale="en">Air Combat Command</name>
-							</affiliation>
+							<affiliation><name locale="en">Air Combat Command</name></affiliation>
+							<email>author12@theledgereconstatecraft.org</email>
 							<biography locale="en">Dr. Craig Buying is a musician and futurist whose background encompasses academia, music, military service, and innovation. He currently supports Air Combat Command Public Affairs. He holds a Doctorate in Music from Stony Brook University and a Master's degree in Innovation from Arizona State University.</biography>
 						</author>
 					</authors>
@@ -192,14 +180,13 @@
 				<publication section_ref="INSIGHT" seq="7" status="3" date_published="2025-01-01">
 					<id type="internal" advice="ignore">7</id>
 					<title locale="en">Fraud as Statecraft: How Deception Became a Tool of International Competition</title>
-					<abstract locale="en">Large-scale financial scams have evolved from simple criminal acts into a potent form of state-sponsored financial warfare. The analysis examines how state actors in the Indo-Pacific weaponize fraud to generate revenue, undermine trust in rival economies, and conduct intelligence gathering. The author recommends treating these operations as national security threats requiring intelligence coordination, sanctions, and infrastructure hardening.</abstract>
+					<abstract locale="en">Large-scale financial scams have evolved from simple criminal acts into a potent form of state-sponsored financial warfare. The analysis examines how state actors in the Indo-Pacific weaponize fraud to generate revenue, undermine trust in rival economies, and conduct intelligence gathering.</abstract>
 					<authors>
 						<author seq="0" id="13" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">James</givenname>
 							<familyname locale="en">Tennant</familyname>
-							<affiliation>
-								<name locale="en">ASPI / BOKA Holdings</name>
-							</affiliation>
+							<affiliation><name locale="en">ASPI / BOKA Holdings</name></affiliation>
+							<email>author13@theledgereconstatecraft.org</email>
 							<biography locale="en">Fellow at ASPI's Cyber, Technology and Security Program and Partner at BOKA Holdings. Australian Army officer and investor in quantum, AI, and space technologies.</biography>
 						</author>
 					</authors>
@@ -239,14 +226,13 @@
 				<publication section_ref="INSIGHT" seq="1" status="3" date_published="2026-01-07">
 					<id type="internal" advice="ignore">8</id>
 					<title locale="en">A Multilateral Challenge to PRC Manufacturing Dominance</title>
-					<abstract locale="en">The article argues that the United States must establish an international consensus through key alliances (NATO, Five Eyes, USMCA, Quad) to create a trusted technology ecosystem that excludes Chinese manufacturing dominance, particularly in cyber-physical systems. The author contends that national sovereignty now depends on controlling data and digital systems.</abstract>
+					<abstract locale="en">The article argues that the United States must establish an international consensus through key alliances (NATO, Five Eyes, USMCA, Quad) to create a trusted technology ecosystem that excludes Chinese manufacturing dominance, particularly in cyber-physical systems.</abstract>
 					<authors>
 						<author seq="0" id="14" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">Jonathan</givenname>
 							<familyname locale="en">Oldstyle</familyname>
-							<affiliation>
-								<name locale="en">U.S. Federal Government</name>
-							</affiliation>
+							<affiliation><name locale="en">U.S. Federal Government</name></affiliation>
+							<email>author14@theledgereconstatecraft.org</email>
 							<biography locale="en">Jonathan Oldstyle is a federal employee with previous experience at the National Security Council, the Department of Defense, and on Wall Street. The views expressed are solely those of the author and do not represent official U.S. Government policies.</biography>
 						</author>
 					</authors>
@@ -259,30 +245,27 @@
 				<publication section_ref="INSIGHT" seq="2" status="3" date_published="2026-01-07">
 					<id type="internal" advice="ignore">9</id>
 					<title locale="en">America's Tech Ambitions Outrunning Industrial Realities</title>
-					<abstract locale="en">Despite substantial federal investments in advanced manufacturing, the United States faces three critical infrastructure constraints that undermine reindustrialization efforts: insufficient energy capacity, hollowed-out industrial supply chains, and a shrinking technical workforce. The authors contend that policy must shift focus from capital expenditure subsidies to addressing operational costs.</abstract>
+					<abstract locale="en">Despite substantial federal investments in advanced manufacturing, the United States faces three critical infrastructure constraints that undermine reindustrialization efforts: insufficient energy capacity, hollowed-out industrial supply chains, and a shrinking technical workforce.</abstract>
 					<authors>
 						<author seq="0" id="15" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">Macdonald</givenname>
 							<familyname locale="en">Amoah</familyname>
-							<affiliation>
-								<name locale="en">Independent Researcher</name>
-							</affiliation>
+							<affiliation><name locale="en">Independent Researcher</name></affiliation>
+							<email>author15@theledgereconstatecraft.org</email>
 							<biography locale="en">Independent Researcher focusing on critical minerals supply chains, advanced manufacturing gaps, the industrial base, and geopolitical risks in the mining sector.</biography>
 						</author>
 						<author seq="1" id="16" user_group_ref="Author" include_in_browse="true">
 							<givenname locale="en">Morgan</givenname>
 							<familyname locale="en">Bazilian</familyname>
-							<affiliation>
-								<name locale="en">Colorado School of Mines</name>
-							</affiliation>
+							<affiliation><name locale="en">Colorado School of Mines</name></affiliation>
+							<email>author16@theledgereconstatecraft.org</email>
 							<biography locale="en">Morgan D. Bazilian directs the Payne Institute for Public Policy and serves as professor at the Colorado School of Mines. He previously held the position of lead energy specialist at the World Bank.</biography>
 						</author>
 						<author seq="2" id="17" user_group_ref="Author" include_in_browse="true">
 							<givenname locale="en">Jahara</givenname>
 							<familyname locale="en">Matisek</familyname>
-							<affiliation>
-								<name locale="en">US Naval War College / Northwestern University</name>
-							</affiliation>
+							<affiliation><name locale="en">US Naval War College / Northwestern University</name></affiliation>
+							<email>author17@theledgereconstatecraft.org</email>
 							<biography locale="en">Lt Col Jahara Matisek (PhD) is a US Air Force command pilot, nonresident research fellow at the US Naval War College, senior fellow at the Payne Institute for Public Policy, and visiting scholar at Northwestern University.</biography>
 						</author>
 					</authors>
@@ -295,14 +278,13 @@
 				<publication section_ref="DISPATCH" seq="3" status="3" date_published="2026-01-07">
 					<id type="internal" advice="ignore">10</id>
 					<title locale="en">A Simplified Framework for Assessing China's Four Warfares and the Need for Institutional Economic Statecraft in a Hybrid Era</title>
-					<abstract locale="en">The article addresses a critical institutional gap: U.S. defense structures designed around traditional DIME frameworks struggle against China's coordinated hybrid warfare campaigns. DiBernardo categorizes China's approach into four warfare domains: psychological, media, legal, and economic, arguing that siloed responses prove ineffective against integrated Chinese operations.</abstract>
+					<abstract locale="en">The article addresses a critical institutional gap: U.S. defense structures designed around traditional DIME frameworks struggle against China's coordinated hybrid warfare campaigns. DiBernardo categorizes China's approach into four warfare domains: psychological, media, legal, and economic.</abstract>
 					<authors>
 						<author seq="0" id="18" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">Michael</givenname>
 							<familyname locale="en">DiBernardo</familyname>
-							<affiliation>
-								<name locale="en">Aletheia Research Institution / U.S. Air Force</name>
-							</affiliation>
+							<affiliation><name locale="en">Aletheia Research Institution / U.S. Air Force</name></affiliation>
+							<email>author18@theledgereconstatecraft.org</email>
 							<biography locale="en">Michael DiBernardo is a FORESIGHT Lab Fellow with Aletheia Research Institution and serves as an Officer in the U.S. Air Force. He holds an M.B.A. and B.A. in Economics. Views expressed are solely the author's and do not represent official U.S. Government positions.</biography>
 						</author>
 					</authors>
@@ -315,14 +297,13 @@
 				<publication section_ref="INSIGHT" seq="4" status="3" date_published="2026-01-07">
 					<id type="internal" advice="ignore">11</id>
 					<title locale="en">The Missing Middle: Neglecting Midcap Companies Undercuts Policy Goals</title>
-					<abstract locale="en">U.S. industrial policy disproportionately supports large mega-cap companies while overlooking mid-sized firms that are essential for scaling innovation into manufactured products. The author contends this creates vulnerability in domestic supply chains, particularly against Chinese competition, and examines gaps in initiatives like the CHIPS Act.</abstract>
+					<abstract locale="en">U.S. industrial policy disproportionately supports large mega-cap companies while overlooking mid-sized firms essential for scaling innovation into manufactured products. The author examines gaps in initiatives like the CHIPS Act and proposes targeted policy solutions including demand-side coordination and patient capital facilities.</abstract>
 					<authors>
 						<author seq="0" id="19" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">Jonathan</givenname>
 							<familyname locale="en">Oldstyle</familyname>
-							<affiliation>
-								<name locale="en">U.S. Federal Government</name>
-							</affiliation>
+							<affiliation><name locale="en">U.S. Federal Government</name></affiliation>
+							<email>author19@theledgereconstatecraft.org</email>
 							<biography locale="en">Jonathan Oldstyle is a federal employee with previous experience at the National Security Council, the Department of Defense, and on Wall Street. The views expressed are solely those of the author and do not represent official U.S. Government policies.</biography>
 						</author>
 					</authors>
@@ -335,22 +316,20 @@
 				<publication section_ref="INSIGHT" seq="5" status="3" date_published="2026-01-07">
 					<id type="internal" advice="ignore">12</id>
 					<title locale="en">Recalibrating the U.S. State Department's Role in Economic Sanctions</title>
-					<abstract locale="en">The article examines how the State Department has increasingly taken on operational roles in sanctions implementation over the past 25 years, arguing this shift has undermined its strategic foreign policy functions. The authors propose restructuring sanctions authority so Treasury handles operational designation and delisting while State focuses on policy prioritization and diplomatic objectives.</abstract>
+					<abstract locale="en">The article examines how the State Department has increasingly taken on operational roles in sanctions implementation over the past 25 years, arguing this shift has undermined its strategic foreign policy functions. The authors propose restructuring sanctions authority between Treasury and State.</abstract>
 					<authors>
 						<author seq="0" id="20" user_group_ref="Author" primary_contact="true" include_in_browse="true">
 							<givenname locale="en">Brad</givenname>
 							<familyname locale="en">Brooks-Rubin</familyname>
-							<affiliation>
-								<name locale="en">Arktouros / CSIS</name>
-							</affiliation>
+							<affiliation><name locale="en">Arktouros / CSIS</name></affiliation>
+							<email>author20@theledgereconstatecraft.org</email>
 							<biography locale="en">Brad Brooks-Rubin is a Partner at Arktouros law firm and senior associate at the Center for Strategic and International Studies. He previously worked as senior advisor in the Office of the Sanctions Coordinator at State Department.</biography>
 						</author>
 						<author seq="1" id="21" user_group_ref="Author" include_in_browse="true">
 							<givenname locale="en">Richard</givenname>
 							<familyname locale="en">Nephew</familyname>
-							<affiliation>
-								<name locale="en">Columbia University</name>
-							</affiliation>
+							<affiliation><name locale="en">Columbia University</name></affiliation>
+							<email>author21@theledgereconstatecraft.org</email>
 							<biography locale="en">Richard Nephew is a senior research scholar and adjunct professor at Columbia University's Center on Global Energy Policy. He previously served as Principal Deputy Sanctions Coordinator at the State Department and authored The Art of Sanctions.</biography>
 						</author>
 					</authors>
