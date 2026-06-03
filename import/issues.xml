@@ -14,11 +14,11 @@
 		</issue_identification>
 		<date_published>2025-01-01</date_published>
 		<sections>
-			<section ref="DISPATCH" seq="1">
+			<section ref="DISPATCH" seq="1" abstract_word_count="0">
 				<abbrev locale="en">DISPATCH</abbrev>
 				<title locale="en">Dispatch</title>
 			</section>
-			<section ref="INSIGHT" seq="2">
+			<section ref="INSIGHT" seq="2" abstract_word_count="0">
 				<abbrev locale="en">INSIGHT</abbrev>
 				<title locale="en">Insight</title>
 			</section>
@@ -210,11 +210,11 @@
 		</issue_identification>
 		<date_published>2026-01-07</date_published>
 		<sections>
-			<section ref="DISPATCH" seq="1">
+			<section ref="DISPATCH" seq="1" abstract_word_count="0">
 				<abbrev locale="en">DISPATCH</abbrev>
 				<title locale="en">Dispatch</title>
 			</section>
-			<section ref="INSIGHT" seq="2">
+			<section ref="INSIGHT" seq="2" abstract_word_count="0">
 				<abbrev locale="en">INSIGHT</abbrev>
 				<title locale="en">Insight</title>
 			</section>
