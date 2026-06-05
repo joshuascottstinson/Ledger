@@ -73,5 +73,30 @@
 {load_script context="frontend"}
 
 {call_hook name="Templates::Common::Footer::PageFooter"}
+
+<script>
+// Force mobile nav to show — override OJS hamburger JS
+(function() {
+    function fixMobileNav() {
+        if (window.innerWidth <= 768) {
+            var nav = document.getElementById('navigationPrimary');
+            var toggle = document.querySelector('.pkp_site_nav_toggle');
+            if (nav) {
+                nav.style.setProperty('display', 'flex', 'important');
+                nav.style.setProperty('flex-wrap', 'wrap', 'important');
+                nav.style.setProperty('justify-content', 'center', 'important');
+            }
+            if (toggle) {
+                toggle.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+    document.addEventListener('DOMContentLoaded', fixMobileNav);
+    window.addEventListener('resize', fixMobileNav);
+    // Run after any OJS JS that might run on load
+    window.addEventListener('load', fixMobileNav);
+    setTimeout(fixMobileNav, 500);
+})();
+</script>
 </body>
 </html>
