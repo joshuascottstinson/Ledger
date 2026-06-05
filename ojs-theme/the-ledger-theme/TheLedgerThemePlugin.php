@@ -29,6 +29,11 @@ class TheLedgerThemePlugin extends ThemePlugin
         $this->addStyle('ledger-stylesheet', 'styles/index.less');
     }
 
+    public function getTemplatePath(bool $inCore = false): string
+    {
+        return parent::getTemplatePath($inCore);
+    }
+
     public function getDisplayName(): string
     {
         return 'The Ledger';
