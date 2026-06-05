@@ -573,42 +573,106 @@ footer {
 // ── Responsive ────────────────────────────────────────────────────────────────
 
 @media (max-width: 768px) {
-    body { font-size: 17px; }
+    body { font-size: 16px; }
 
     #container, .pkp_structure_main, .page {
-        padding: 0 20px;
+        padding: 0 16px;
     }
 
+    // Header: constrain and center logo
     .pkp_structure_head {
-        padding: 2rem 0 0;
+        padding: 1.5rem 16px 0;
+        overflow: hidden;
 
-        .pkp_site_name a { font-size: 2rem; }
-    }
+        .pkp_site_name {
+            margin-bottom: 1rem;
+            text-align: center;
 
-    .pkp_navigation_primary,
-    .pkp_nav_primary ul {
-        flex-wrap: wrap;
+            a {
+                font-size: 1.75rem;
+            }
 
-        li a {
-            font-size: 0.8rem;
-            padding: 1rem 1.25rem;
-            letter-spacing: 0.8px;
+            img {
+                max-width: 100%;
+                width: auto;
+                height: auto;
+                max-height: 160px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .pkp_site_name_tagline, .tagline {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
         }
     }
 
-    .pkp_structure_main { padding-top: 2.5rem; }
+    // Navigation: stack vertically on small screens
+    .pkp_navigation_primary {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 0;
+    }
 
+    .pkp_nav_primary ul,
+    .pkp_navigation_primary ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+        li a {
+            font-size: 0.75rem;
+            padding: 0.6rem 0.9rem;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+    }
+
+    .pkp_structure_main { padding-top: 2rem; }
+
+    // Article cards
     .pkp_article_preview,
     .obj_article_summary {
-        padding: 1.75rem;
-        h2, h3 { font-size: 1.5rem; }
+        padding: 1.25rem;
+        h2, h3 { font-size: 1.3rem; }
     }
 
+    // Article page title
     .pkp_page_article .page_title,
     .pkp_page_article h1.title {
-        font-size: 2.25rem;
+        font-size: 1.75rem;
+        line-height: 1.3;
     }
 
-    h1 { font-size: 2.25rem; }
-    h2 { font-size: 1.75rem; }
+    h1 { font-size: 1.75rem; line-height: 1.3; }
+    h2 { font-size: 1.4rem; }
+    h3 { font-size: 1.2rem; }
+
+    // Issue header
+    .pkp_structure_content {
+        padding: 0;
+    }
+
+    // Footer
+    .pkp_structure_footer {
+        padding: 2rem 16px;
+
+        .footer-inner {
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .footer-social {
+            justify-content: center;
+        }
+
+        .footer-search {
+            width: 100%;
+            input[type="search"] { width: 100%; }
+        }
+    }
 }
